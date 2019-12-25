@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const ProductData = [
+const PRODUCT_DATA = [
     {
         id: 1,
         product_sid: '5MJBQJ',
@@ -16,7 +16,7 @@ const ProductData = [
     }
 ];
 
-export default ProductData;
+export default PRODUCT_DATA;
 
 
 

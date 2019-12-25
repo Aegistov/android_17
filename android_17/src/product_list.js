@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductData from './product_data';
+import PRODUCT_DATA from './product_data';
 
 export class ProductList extends React.Component {
 
@@ -10,10 +11,10 @@ export class ProductList extends React.Component {
         return (
             <div>
                 <ul>
-                    {ProductData.map(item => <li key={item.id}>
+                    {PRODUCT_DATA.map(item => <li key={item.id}>
                         {item.name}
                     </li>)}
-                    {ProductData.map(item => <li key={item.id}>
+                    {PRODUCT_DATA.map(item => <li key={item.id}>
                         {item.price}
                     </li>)}
                 </ul>
