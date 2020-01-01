@@ -25,40 +25,32 @@ export class ProductList extends React.Component {
 
 
     render() {
-       console.log(this.state.products)
 
-        var {  isLoaded, products } = this.state;
 
-        if(!isLoaded) {
+        var { isLoaded, products } = this.state;
+
+        if (!isLoaded) {
             return <div>Loading...</div>;
         }
-
         else {
-        
-        return (
-            <div>
-                <ul>
-                    {products.map(product => (
-                        <li key={product.sid}>
-                            <div>
-                                <p>{product.name}</p>
-                            </div>
-                            <div>{product.price}</div>
-                        </li>
-                    ))}
-                </ul>
+            return (
+                <div>
+                    <ul>
+                        {products.map(product => (
+                            <li key={product.sid}>
+                                <div>
+                                    <p>{product.name}</p>
+                                </div>
+                                <div>{product.price}</div>
+                            </li>
+                        ))}
+                    </ul>
 
-            </div>
-        );
+                </div>
+            );
+        }
     }
-}
-
-
 
 }
 
 export default ProductList;
-
-
-
-
